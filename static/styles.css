@@ -1,0 +1,192 @@
+body
+{
+    background-color: black;
+    color: white;
+}
+
+canvas
+{
+    border: 10px dotted orange;
+}
+
+header, main, footer
+{
+    background-color: inherit;
+    color: inherit;
+}
+
+nav
+{
+    background-color: yellow;
+    border-color: orange;
+    border-style: solid none solid none;
+    border-width: 5px;
+    color: black;
+    text-align: center;
+}
+
+table
+{
+    background-color: inherit;
+    border-collapse: collapse;
+    color: inherit;
+    width: 100%;
+}
+
+table caption
+{
+    caption-side: top;
+    color: inherit;
+    font-size: large;
+}
+
+table th, table td
+{
+    border-width: 2px;
+    border-style: none none solid none;
+    padding: 5px 25px;
+    text-align: left;
+}
+
+tbody tr:nth-child(1)
+{
+    animation: shine 4s linear infinite;
+    background: linear-gradient(-45deg, #ffd700, #ffdf32, #ffdf32, #ffeb7f, #ffeb7f, #ffffff, #ffeb7f, #ffeb7f, #ffdf32, #ffdf32, #ffd700);
+	background-size: 200% 200%;
+	border: 8px ridge #ffd700;
+	color: black;
+}
+
+tbody tr:nth-child(2)
+{
+    background: linear-gradient(-45deg, #c0c0c0, #cccccc, #cccccc, #dfdfdf, #dfdfdf, #ffffff, #dfdfdf, #dfdfdf, #cccccc, #cccccc, #c0c0c0);
+    background-size: 200% 200%;
+    border: 6px ridge #c0c0c0;
+    color: black;
+}
+
+tbody tr:nth-child(3)
+{
+    background: #d7985a;
+    background-size: 200% 200%;
+    border: 4px ridge #cd7f32;
+    color: black;
+}
+
+.container
+{
+    padding: 20px;
+}
+
+.customEmoji
+{
+    height: 20px;
+    width: 20px;
+}
+
+.difficultyButton
+{
+    background-color: #323232;
+    border-color: inherit;
+    border-radius: 5px 5px 0px 0px;
+    border-style: solid solid solid solid;
+    border-width: 2px;
+    color: white;
+    margin: 0px -3px;
+    width: 100px;
+}
+
+.difficultyButton.active
+{
+    background-color: inherit;
+    border-style: solid solid none solid;
+    font-weight: bold;
+}
+
+.difficultyButton:focus
+{
+    outline: none;
+}
+
+.difficultyTab
+{
+    padding: 20px 0px;
+}
+
+.footnote
+{
+    font-size: 10px;
+    text-align: center;
+}
+
+.heading
+{
+    font-family: 'Sofia';
+}
+
+.pageHeading
+{
+    color: orange;
+    font-family: 'Sofia';
+    padding: 10px;
+    text-align: center;
+}
+
+.red
+{
+    color: red;
+}
+
+#canvasDiv
+{
+    position: relative;
+}
+
+#canvasInput
+{
+    left: 10px;
+    position: absolute;
+    text-align: center;
+    top: 400px;
+    width: 500px;
+}
+
+#canvasResults
+{
+    left: 10px;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    width: 500px;
+}
+
+#recordMessage
+{
+    font-size: 40px;
+}
+
+#storyDiv
+{
+    left: 10px;
+    padding: 10px;
+    position: absolute;
+    text-align: left;
+    top: 10px;
+    width: 500px;
+}
+
+#timeMessage
+{
+    font-size: 20px;
+}
+
+#winMessage
+{
+    font-size: 50px;
+}
+
+@keyframes shine
+{
+	0% {background-position: 400% 0%;}
+    100% {background-position: 0% 0%;}
+}
